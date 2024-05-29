@@ -1,15 +1,13 @@
 @use "../theme/variables" as *;
 
 .box {
+  padding: 30px;
   position: absolute;
   width: 354px;
-  height: 200px;
-  right: 0;
-  top: 0;
-
+  height: 20px;
   background: #1f1f1f;
   box-shadow:
-    0px -0.426195px 5.92412px #be05ff,
-    0px 1.70478px 1.70478px #1342ec;
-  border-radius: 8.9501px;
+    0px -0.5px 6px #be05ff,
+    0px 2px 2px #1342ec;
+  border-radius: 8px;
 }

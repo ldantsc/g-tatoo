@@ -2,10 +2,12 @@
 
 .container-content {
   display: flex;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 30px 0;
   gap: 70px;
 }
 
@@ -17,13 +19,18 @@
 }
 
 .address-logo > .logo {
-  width: 265px;
+  width: 36.6rem;
 }
 
 .container-adress {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.container-carrousel {
+  position: relative;
+  overflow-x: hidden;
 }
 
 .container-adress > img {
