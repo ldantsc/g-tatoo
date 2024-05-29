@@ -3,22 +3,21 @@ import { SlideImageComponent } from '../../components/slide-image/slide-image.co
 import { DataService } from '../../services/data.service';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import { jsonData } from '../../models/json-data';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SlideImageComponent, JsonPipe, AsyncPipe],
+  imports: [MatIconModule, SlideImageComponent, JsonPipe, AsyncPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
-  items:jsonData | any
+  items: jsonData | any;
 
   constructor(private data: DataService) {}
 
   ngOnInit(): void {
-    this.data.fetchDataJson().subscribe(
-      res => this.items = res
-    )
+    this.data.fetchDataJson().subscribe((res) => (this.items = res));
   }
 }

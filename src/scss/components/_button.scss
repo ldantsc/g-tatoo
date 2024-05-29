@@ -1,4 +1,11 @@
-@use '../theme/variables' as *;
+@use "../theme/variables" as *;
+
+.whatsapp-btn {
+  position: fixed;
+  top: 80vh;
+  right: 5vw;
+  z-index: 50;
+}
 
 .quote-btn {
   display: flex;
@@ -7,7 +14,11 @@
   padding: 12px;
   gap: 4px;
   color: $white-color;
-  background: linear-gradient(40deg, rgba(74,111,241,1) 45%, rgba(190,5,255,1) 100%);
+  background: linear-gradient(
+    40deg,
+    rgba(74, 111, 241, 1) 45%,
+    rgba(190, 5, 255, 1) 100%
+  );
   border-radius: 4px;
 }
 

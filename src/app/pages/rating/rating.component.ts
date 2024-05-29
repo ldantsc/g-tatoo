@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './rating.component.html',
-  styleUrl: './rating.component.scss'
+  styleUrl: './rating.component.scss',
 })
-export class RatingComponent {
-
-}
+export class RatingComponent {}

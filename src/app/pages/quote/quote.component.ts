@@ -6,8 +6,6 @@ import { ButtonComponent } from '../../components/button/button.component';
   standalone: true,
   imports: [ButtonComponent],
   templateUrl: './quote.component.html',
-  styleUrl: './quote.component.scss'
+  styleUrl: './quote.component.scss',
 })
-export class QuoteComponent {
-
-}
+export class QuoteComponent {}

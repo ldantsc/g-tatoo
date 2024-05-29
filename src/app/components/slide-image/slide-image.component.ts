@@ -1,16 +1,15 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import KeenSlider, { KeenSliderInstance } from "keen-slider"
+import KeenSlider, { KeenSliderInstance } from 'keen-slider';
 
 @Component({
   selector: 'app-slide-image',
   standalone: true,
   imports: [],
   templateUrl: './slide-image.component.html',
-  styleUrl: './slide-image.component.scss'
+  styleUrl: './slide-image.component.scss',
 })
 export class SlideImageComponent {
-
-  @ViewChild("sliderRef")
+  @ViewChild('sliderRef')
   sliderRef!: ElementRef<HTMLElement>;
 
   slider: KeenSliderInstance | undefined;
@@ -21,11 +20,11 @@ export class SlideImageComponent {
         perView: 2,
         spacing: 500,
       },
-    })
-    console.log(this.slider)
+    });
+    console.log(this.slider);
   }
 
   ngOnDestroy() {
-    if (this.slider) this.slider.destroy()
+    if (this.slider) this.slider.destroy();
   }
 }

@@ -1,0 +1,15 @@
+@use "../theme/variables" as *;
+
+.box {
+  position: absolute;
+  width: 354px;
+  height: 200px;
+  right: 0;
+  top: 0;
+
+  background: #1f1f1f;
+  box-shadow:
+    0px -0.426195px 5.92412px #be05ff,
+    0px 1.70478px 1.70478px #1342ec;
+  border-radius: 8.9501px;
+}

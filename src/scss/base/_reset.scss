@@ -1,12 +1,12 @@
-@use '../theme/variables' as *;
+@use "../theme/variables" as *;
 
 *,
 *:after,
 *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -14,7 +14,9 @@ html {
   box-sizing: border-box;
 }
 
-p, a, li {
+p,
+a,
+li {
   font-size: 1.6rem;
 }
 
@@ -28,25 +30,4 @@ h3 {
 
 ul {
   list-style: none;
-}
-
-.container {
-  height: 40dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  background-color: rgb(15, 15, 15);
-}
-
-video {
-  position: absolute;
-  top: -12px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: blur(1);
-  filter: grayscale(1);
 }

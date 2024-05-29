@@ -1,12 +1,15 @@
-@use 'base/reset';
+@use "base/reset";
 
-@use 'components/header';
-@use 'components/marquee';
-@use 'components/button';
+@use "components/header";
+@use "components/marquee";
+@use "components/button";
 
-@use 'layout/container';
+@use "layout/container";
+@use "layout/box";
 
-@use 'pages/main';
+@use "pages/main";
+@use "pages/home";
+@use "pages/quote";
 
-@use 'theme/themes';
-@use 'theme/variables' as *;
+@use "theme/themes";
+@use "theme/variables" as *;

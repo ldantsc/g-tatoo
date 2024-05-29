@@ -4,16 +4,16 @@ import { jsonData } from '../models/json-data';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
   jsonUrl: any;
 
   constructor(private http: HttpClient) {
-    this.jsonUrl = "assets/db.json"
-   }
+    this.jsonUrl = 'assets/db.json';
+  }
 
   fetchDataJson() {
-    return this.http.get<jsonData>(this.jsonUrl)
+    return this.http.get<jsonData>(this.jsonUrl);
   }
 }
