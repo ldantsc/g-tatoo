@@ -1,0 +1,30 @@
+@use '../theme/variables' as *;
+
+body {
+  font-family: $comfortaa;
+  background-color: $bg-page-black;
+  color: $white-color;
+}
+
+.container-carrousel {
+  width: 500px;
+  height: 200px;
+  position: relative;
+}
+
+.box {
+  top: 0;
+  position: absolute;
+  height: 205px;
+  width: 399px;
+  background-color: $black-container;
+  z-index: -10;
+}
+
+.box .background {
+  height: 217px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 400px;
+}

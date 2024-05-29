@@ -1,0 +1,36 @@
+@use '../theme/variables' as *;
+
+.container-marquee {
+  --gap: 6rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  border-top: 4px solid $black-color;
+  border-bottom: 4px solid $black-color;
+  padding: 10px;
+  gap: var(--gap);
+}
+
+.marquee-list {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: marquee-effect 40s linear infinite;
+}
+
+.marquee-list > li {
+  font-weight: bold;
+  font-size: 4.2rem;
+}
+
+@keyframes marquee-effect {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}

@@ -1,0 +1,10 @@
+@use '../theme/variables' as *;
+
+.mat-toolbar {
+  background: $black-container !important;
+  justify-content: end;
+}
+
+.mat-icon {
+  color: $grey-color;
+}

@@ -1,0 +1,16 @@
+@use '../theme/variables' as *;
+
+.quote-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+  gap: 4px;
+  color: $white-color;
+  background: linear-gradient(40deg, rgba(74,111,241,1) 45%, rgba(190,5,255,1) 100%);
+  border-radius: 4px;
+}
+
+.quote-icon-btn {
+  width: 20px;
+}

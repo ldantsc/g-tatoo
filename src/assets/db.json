@@ -1,0 +1,67 @@
+{
+  "logo": {
+    "title": "Giovanna Lopes",
+    "subtitle": "tattoo studio"
+  },
+  "contact": {
+    "address": "Avenida Sapopemba, 1111 - Proximo ao Terminal Sapopemba",
+    "phone": "(11) 99999-9999",
+    "instagram": "gihlopestattoo"
+  },
+  "quote": {
+    "describe": "Nosso estúdio une criatividade e excelência com preços acessíveis, possibilitando que todos realizem o sonho de transformar suas ideias em arte na pele.",
+    "button": {
+      "title": "Faça o seu orçamento !"
+    },
+    "ambient-list": [
+      {
+        "symbol": "palette",
+        "title": "Variedade de estilos"
+      },
+      {
+        "symbol": "paid",
+        "title": "Preços transparentes"
+      },
+      {
+        "symbol": "alarm_on",
+        "title": "Horários flexíveis"
+      },
+      {
+        "symbol": "handshake",
+        "title": "Atendimento personalizado"
+      },
+      {
+        "symbol": "sanitizer",
+        "title": "Ambiente higiênico e seguro"
+      },
+      {
+        "symbol": "star_half",
+        "title": "Estilo único e personalizado"
+      }
+    ],
+    "ratings": {
+      "title": "Algumas avaliações de nossos clientes 💞",
+      "person": [
+        {
+          "name": "",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+          "imgsrc": ""
+        },
+        {
+          "name": "",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+          "imgsrc": ""
+        },
+        {
+          "name": "",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+          "imgsrc": ""
+        }
+      ]
+    }
+  },
+  "artist": {
+    "name": "Giovanna",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+  }
+}

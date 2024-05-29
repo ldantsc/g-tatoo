@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Comfortaa:wght@300..700&family=Luxurious+Script&family=Oranienbaum&display=swap');
+
+@font-face {
+  font-family: 'Base Neue';
+  src: url('/src/assets/fonts/base-neue/BaseNeueTrial-Bold.ttf');
+  font-weight: bold;
+}
+
+// fonts
+$comfortaa: 'Comfortaa', Arial, sans-serif;
+$cairo: 'Cairo', Arial, sans-serif;
+$luxurious-script: 'Luxurious Script', Arial, sans-serif;
+$oranienbaum: 'Oranienbaum', Arial, sans-serif;
+
+//pallets
+$black-color: #000;
+$white-color: #FFF;
+$grey-color: #C2C2C2;
+$bg-page-black: #1A1A1A;
+$bg-footer-black: #141414;
+$black-container: #1F1F1F;
+$purple-custom: #BE05FF;
+$blue-custom: #1342EC;
+
+//shadows
+
