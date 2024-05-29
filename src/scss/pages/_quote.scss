@@ -13,13 +13,11 @@
 
 video {
   position: absolute;
-
   left: 0;
   width: 100%;
   height: auto;
   object-fit: cover;
-  filter: blur(1);
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(0.6) drop-shadow(20px 20px 20px black);
 }
 
 .container-quote > h3 {
