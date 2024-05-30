@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import KeenSlider, { KeenSliderInstance } from "keen-slider"
+import { SliderComponent } from '../../components/slider/slider.component';
 
 @Component({
   selector: 'app-information',
   standalone: true,
-  imports: [MatIconModule],
+  imports: [MatIconModule, SliderComponent],
   templateUrl: './information.component.html',
   styleUrl: './information.component.scss',
 })
@@ -35,4 +37,5 @@ export class InformationComponent {
       descript: 'Estilo único e personalizado',
     },
   ];
+
 }
