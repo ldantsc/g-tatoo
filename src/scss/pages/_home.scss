@@ -14,29 +14,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 28px;
 }
 
 .address-logo > .logo {
   width: 36.6rem;
 }
 
-.container-adress {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.container-adress > img {
+  vertical-align: middle;
+  width: 2.6rem;
+  margin-right: 4px;
+}
+
+.container-adress > address {
+  display: inline;
+  font-style: normal;
+  font-size: 1.4rem;
 }
 
 .container-carrousel {
   position: relative;
   overflow-x: hidden;
-}
-
-.container-adress > img {
-  width: 2.6rem;
-}
-
-.container-adress > address {
-  font-style: normal;
-  font-size: 1.4rem;
 }
