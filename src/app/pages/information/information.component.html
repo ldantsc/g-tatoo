@@ -1,7 +1,10 @@
-<div>
-  <ul>
+<div class="container-information">
+  <ul class="information-items">
     @for (item of items; track $index) {
-      <li>{{ item }}</li>
+      <li>
+        <mat-icon aria-label="false" fontIcon={{item.icon}}></mat-icon>
+        {{ item.descript }}
+      </li>
     }
   </ul>
   <div>Carrousel aqui</div>

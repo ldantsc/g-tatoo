@@ -1,29 +1,33 @@
+@use "../theme/variables" as *;
+
 .container-quote {
   margin-top: 100px;
-  height: 24dvh;
+  height: 26dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  gap: 16px;
-  background-color: rgb(15, 15, 15);
+  gap: 34px;
+  background-color: transparent;
 }
 
 video {
   position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: max-content;
   object-fit: cover;
-  filter: grayscale(1) brightness(0.6) drop-shadow(20px 20px 20px black);
+  filter: grayscale(1) brightness(0.6) drop-shadow(20px 20px 20px $black-color);
 }
 
 .container-quote > h3 {
+  padding: 0 30px;
   text-align: center;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .container-quote > h3,

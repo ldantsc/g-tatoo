@@ -12,16 +12,29 @@
   align-items: center;
   justify-content: space-around;
   padding: 12px;
-  gap: 4px;
+  gap: 1rem;
   color: $white-color;
   background: linear-gradient(
     40deg,
     rgba(74, 111, 241, 1) 45%,
     rgba(190, 5, 255, 1) 100%
   );
+  font-family: $anek;
+  font-size: 1.4rem;
+  font-weight: 800;
   border-radius: 4px;
+  transition: background 5000ms linear;
 }
 
 .quote-icon-btn {
   width: 20px;
+}
+
+.quote-btn:hover {
+  background: linear-gradient(
+    40deg,
+    rgba(190, 5, 255, 1) 45%,
+    rgba(74, 111, 241, 1) 100%,
+  );
+  transition: background 3s linear;
 }

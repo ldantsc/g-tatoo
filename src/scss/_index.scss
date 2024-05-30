@@ -3,6 +3,7 @@
 @use "components/header";
 @use "components/marquee";
 @use "components/button";
+@use "components/footer";
 
 @use "layout/container";
 @use "layout/box";
@@ -10,6 +11,9 @@
 @use "pages/main";
 @use "pages/home";
 @use "pages/quote";
+@use "pages/information";
+@use "pages/rating";
+@use "pages/about";
 
 @use "theme/themes";
 @use "theme/variables" as *;
