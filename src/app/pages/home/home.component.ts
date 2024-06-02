@@ -1,14 +1,15 @@
 import { Component, OnInit, WritableSignal, signal } from '@angular/core';
-import { SlideImageComponent } from '../../components/slide-image/slide-image.component';
 import { DataService } from '../../services/data.service';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import { jsonData } from '../../models/json-data';
 import { MatIconModule } from '@angular/material/icon';
+import { SliderComponent } from '../../components/slider/slider.component';
+import { SwiperComponent } from '../../components/swiper/swiper.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatIconModule, SlideImageComponent, JsonPipe, AsyncPipe],
+  imports: [MatIconModule,SwiperComponent, SliderComponent, JsonPipe, AsyncPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

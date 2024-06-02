@@ -1,13 +1,8 @@
 @use "../theme/variables" as *;
 
-.box {
-  padding: 30px;
+.rectangle {
+  top: 0;
+  right: 0;
+  width: 40.0em;
   position: absolute;
-  width: 354px;
-  height: 20px;
-  background: #1f1f1f;
-  box-shadow:
-    0px -0.5px 6px $purple-custom,
-    0px 2px 2px $blue-custom;
-  border-radius: 8px;
 }
