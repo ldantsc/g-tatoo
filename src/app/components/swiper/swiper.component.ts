@@ -1,6 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild, afterNextRender } from '@angular/core';
 import Swiper from 'swiper';
 import { register } from 'swiper/element/bundle';
+import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-swiper',
@@ -11,6 +12,9 @@ import { register } from 'swiper/element/bundle';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SwiperComponent {
+  @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
+  public swiperParams!: SwiperOptions;
+
 
   ngAfterViewInit() {
     register();

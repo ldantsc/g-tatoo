@@ -4,20 +4,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 60px;
   gap: 100px;
 }
 
-.information-items li {
+.information-items {
   font-size: 1.2rem;
-  display: inline-block;
-  width: 50%;
-  vertical-align: middle;
-  padding: 4px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  padding: 2px;
+  gap: 30px;
+  text-align: center;
 }
 
-mat-icon {
-  vertical-align: middle;
+.information-items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  gap: 6px;
+}
+
+.item > .mat-icon {
+  width: 32px;
+  object-fit: cover;
 }
 
 .container-information-slider {

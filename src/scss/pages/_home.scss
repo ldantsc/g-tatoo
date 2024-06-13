@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 4em;
   margin: 3em 0;
-  gap: 70px;
+  gap: 10em;
 }
 
 .container-logo {
@@ -18,7 +19,7 @@
 }
 
 .address-logo > .logo {
-  width: 36.6rem;
+  width: 26.6rem;
 }
 
 .container-adress > img {
@@ -34,7 +35,18 @@
 }
 
 .container-carrousel {
-  height: 36vh;
   position: relative;
-  overflow: hidden;
+  overflow-y: visible;
+}
+
+@media screen and (1280px < width) {
+  .container-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0;
+    gap: 1em;
+  }
 }

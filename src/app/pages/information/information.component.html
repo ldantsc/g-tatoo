@@ -1,12 +1,12 @@
 <div class="container-information">
-  <ul class="information-items">
+  <div class="information-items">
     @for (item of items; track $index) {
-      <li>
+      <div class="item">
         <mat-icon aria-label="false" fontIcon="{{ item.icon }}"></mat-icon>
-        {{ item.descript }}
-      </li>
+        <p>{{ item.descript }}</p>
+      </div>
     }
-  </ul>
+  </div>
   <div class="container-information-slider">
   </div>
 </div>
