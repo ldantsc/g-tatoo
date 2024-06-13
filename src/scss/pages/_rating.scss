@@ -15,6 +15,7 @@
 
 .container-rating h2 {
   padding: 30px 0;
+  text-align: center;
 }
 
 .user-image {
@@ -29,4 +30,9 @@
   align-items: center;
   text-align: center;
   gap: 8px;
+}
+
+.container-rating-user p {
+  margin: 12px;
+  padding: 12px;
 }
