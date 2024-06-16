@@ -1,8 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-header',
@@ -10,24 +18,35 @@ import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } fro
   imports: [MatButtonModule, MatIconModule, MatToolbarModule, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  animations: [
+    trigger('mobile-nav', [
+      state('close-modal', style({
+        transform: 'scale(1)'
+      })),
+      state('open-nav', style({
+        transform: 'scale(2)',
+        innerHeight: '40vh'
+      })),
+      transition('close-modal => open-nav', animate('10s')),
+      transition('open-modal => close-nav', animate('10s'))
+    ]),
+  ]
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   isOpen: boolean = false
 
-  constructor(router: Router) {
+  constructor(private router: Router) {
+  }
 
-    router.events.subscribe(s => {
-      if (s instanceof NavigationEnd) {
-        const tree = router.parseUrl(router.url);
-        if (tree.fragment) {
-          const element = document.querySelector("#" + tree.fragment);
-          if (element) { element.scrollIntoView(true); }
-        }
+  ngOnInit() {
+    this.router.events.subscribe(event => {
+      if(event) {
+        this.isOpen = false
       }
-    });
+    })
   }
 
   toggleNav() {
-    return this.isOpen ? this.isOpen = false : this.isOpen = true;
+    this.isOpen = !this.isOpen;
   }
 }

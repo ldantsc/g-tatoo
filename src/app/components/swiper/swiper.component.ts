@@ -1,5 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild, afterNextRender } from '@angular/core';
-import Swiper from 'swiper';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild } from '@angular/core';
 import { register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
 

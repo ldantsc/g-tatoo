@@ -1,9 +1,9 @@
 <div class="container-information">
   <div class="information-items">
-    @for (item of items; track $index) {
+    @for (item of items.ambient; track $index) {
       <div class="item">
-        <mat-icon aria-label="false" fontIcon="{{ item.icon }}"></mat-icon>
-        <p>{{ item.descript }}</p>
+        <mat-icon aria-label="false" fontIcon="{{ item.symbol }}"></mat-icon>
+        <p>{{ item.title }}</p>
       </div>
     }
   </div>

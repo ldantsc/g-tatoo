@@ -3,10 +3,15 @@
     <img class="logo" src="/assets/gi-logo.svg" alt="" width="280px" />
   </div>
   <div class="container-contact">
-    <ul>
-      <li>Av Sapopemba - Jardim Sapopemba</li>
-      <li>(11) 99999-9999</li>
-      <li>gihlopestattoo</li>
+    <ul class="contact-list">
+      <li>{{items.contact.address}}</li>
+      <li>{{items.contact.phone}}</li>
+      <li>
+        <a href="https://www.instagram.com/gihlopestattoo/" target="_blank">
+        <img src="assets/instagram.svg" alt="" width="32px">
+          {{items.contact.instagram}}
+        </a>
+      </li>
     </ul>
   </div>
   <div class="container-map">

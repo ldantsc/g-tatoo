@@ -8,7 +8,7 @@
 :host > swiper-container > swiper-slide {
 }
 
-swiper-slide >  img {
+:host > swiper-container > swiper-slide >  img {
   width: 168px;
   height: 240px;
   border-radius: 8px;

@@ -1,41 +1,24 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import KeenSlider, { KeenSliderInstance } from "keen-slider"
-import { SliderComponent } from '../../components/slider/slider.component';
+import { DataService } from '../../services/data.service';
+import { JsonData } from '../../models/json-data';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-information',
   standalone: true,
-  imports: [MatIconModule, SliderComponent],
+  imports: [MatIconModule, AsyncPipe],
   templateUrl: './information.component.html',
   styleUrl: './information.component.scss',
 })
 export class InformationComponent {
-  items = [
-    {
-      icon: 'palette_outlined',
-      descript: 'Variedade de estilos',
-    },
-    {
-      icon: 'paid',
-      descript: 'Preços transparentes',
-    },
-    {
-      icon: 'alarm_on',
-      descript: 'Horários flexíveis',
-    },
-    {
-      icon: 'handshake',
-      descript: 'Atendimento personalizado',
-    },
-    {
-      icon: 'sanitizer',
-      descript: 'Ambiente higiênico e seguro',
-    },
-    {
-      icon: 'star_half',
-      descript: 'Estilo único e personalizado',
-    },
-  ];
+  items!: JsonData;
 
+  constructor(private _data: DataService) {}
+
+  public getData = this._data.fetchDataJson()
+
+  ngOnInit(): void {
+    this.getData.subscribe((res) => (this.items = res));
+  }
 }

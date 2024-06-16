@@ -1,5 +1,6 @@
 {
   "logo": {
+    "img": "assets/gi-logo.svg",
     "title": "Giovanna Lopes",
     "subtitle": "tattoo studio"
   },
@@ -10,57 +11,59 @@
   },
   "quote": {
     "describe": "Nosso estúdio une criatividade e excelência com preços acessíveis, possibilitando que todos realizem o sonho de transformar suas ideias em arte na pele.",
+    "videosrc": "assets/bg-video.mp4",
     "button": {
       "title": "Faça o seu orçamento !"
-    },
-    "ambient-list": [
-      {
-        "symbol": "palette",
-        "title": "Variedade de estilos"
-      },
-      {
-        "symbol": "paid",
-        "title": "Preços transparentes"
-      },
-      {
-        "symbol": "alarm_on",
-        "title": "Horários flexíveis"
-      },
-      {
-        "symbol": "handshake",
-        "title": "Atendimento personalizado"
-      },
-      {
-        "symbol": "sanitizer",
-        "title": "Ambiente higiênico e seguro"
-      },
-      {
-        "symbol": "star_half",
-        "title": "Estilo único e personalizado"
-      }
-    ],
-    "ratings": {
-      "title": "Algumas avaliações de nossos clientes 💞",
-      "person": [
-        {
-          "name": "",
-          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-          "imgsrc": ""
-        },
-        {
-          "name": "",
-          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-          "imgsrc": ""
-        },
-        {
-          "name": "",
-          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-          "imgsrc": ""
-        }
-      ]
     }
   },
+  "ambient": [
+    {
+      "symbol": "palette_outlined",
+      "title": "Variedade de estilos"
+    },
+    {
+      "symbol": "paid",
+      "title": "Preços transparentes"
+    },
+    {
+      "symbol": "alarm_on",
+      "title": "Horários flexíveis"
+    },
+    {
+      "symbol": "handshake",
+      "title": "Atendimento personalizado"
+    },
+    {
+      "symbol": "sanitizer",
+      "title": "Ambiente higiênico e seguro"
+    },
+    {
+      "symbol": "star_half",
+      "title": "Estilo único e personalizado"
+    }
+  ],
+  "ratings": {
+    "title": "Algumas avaliações de nossos clientes 💞",
+    "person": [
+      {
+        "name": "Fulano 1",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+        "imgsrc": "https://picsum.photos/200"
+      },
+      {
+        "name": "Fulano 2",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+        "imgsrc": "https://picsum.photos/200"
+      },
+      {
+        "name": "Fulano 3",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+        "imgsrc": "https://picsum.photos/200"
+      }
+    ]
+  },
   "artist": {
+    "img": "assets/artist-1.png",
     "name": "Giovanna",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
   }

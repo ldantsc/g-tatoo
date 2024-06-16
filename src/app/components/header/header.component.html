@@ -1,23 +1,24 @@
 <mat-toolbar class="header">
-  <button
-    (click)="toggleNav()"
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon color="white">menu</mat-icon>
-  </button>
+  <mat-toolbar-row>
+    <button
+      (click)="toggleNav()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon color="white">menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+  @if (isOpen) {
+  <mat-toolbar-row class="toggler-nav" [@mobile-nav]="isOpen ? 'open-modal' : 'close-modal'">
+    <nav class="nav">
+      <a routerLink="/" fragment="home">inicio</a>
+      <a routerLink="" fragment="quote">orçamento</a>
+      <a routerLink="" fragment="information">ambiente</a>
+      <a routerLink="" fragment="rating">avaliações</a>
+      <a routerLink="" fragment="about">sobre</a>
+      <a routerLink="" fragment="contact">contato</a>
+    </nav>
+  </mat-toolbar-row>
+  }
 </mat-toolbar>
-@if (isOpen) {
-  <nav class="nav">
-      <button class="close-button" (click)="toggleNav()">
-        <mat-icon color="white">close</mat-icon>
-      </button>
-    <a routerLink="">inicio</a>
-    <a routerLink="" fragment="quote">orçamento</a>
-    <a routerLink="" fragment="information">ambiente</a>
-    <a routerLink="" fragment="rating">avaliações</a>
-    <a routerLink="" fragment="about">sobre</a>
-    <a routerLink="" fragment="contact">contato</a>
-  </nav>
-}

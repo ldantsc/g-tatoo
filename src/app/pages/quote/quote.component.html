@@ -1,12 +1,10 @@
 <div class="container-quote">
   <h3>
-    Nosso estúdio une criatividade e excelência com preços acessíveis,
-    possibilitando que todos realizem o sonho de transformar suas ideias em arte
-    na pele.
+    {{items.quote.describe}}
   </h3>
-  <app-button buttonType="quoteBtn"></app-button>
+  <app-button buttonType="quoteBtn" buttonTitle={{items.quote.button.title}}></app-button>
   <video
-    src="../../../assets/bg-video.mp4"
+    src={{items.quote.videosrc}}
     [autoplay]="true"
     [muted]="true"
     [playsInline]="true"

@@ -1,33 +1,53 @@
-export interface jsonData {
-  logo: {
-    title: string;
-    subtitle: string;
-  };
-  contact: {
-    address: string;
-    phone: string;
-    instagram: string;
-  };
-  quote: {
-    describe: string;
-    button: {
-      title: string;
-    };
-    ambientList: {
-      symbol: string;
-      title: string;
-    }[];
-    ratings: {
-      title: string;
-      person: {
-        name: string;
-        comment: string;
-        imgsrc: string;
-      }[];
-    };
-  };
-  artist: {
-    name: string;
-    description: string;
-  };
+export interface JsonData {
+  subscribe(): unknown;
+  logo: Logo;
+  contact: Contact;
+  quote: Quote;
+  ambient?: (Ambient)[] | null;
+  ratings: Ratings;
+  artist: Artist;
+}
+
+export interface Logo {
+  img: string;
+  title: string;
+  subtitle: string;
+}
+
+export interface Contact {
+  address: string;
+  phone: string;
+  instagram: string;
+}
+
+export interface Quote {
+  describe: string;
+  videosrc: string;
+  button: Button;
+}
+
+export interface Button {
+  title: string;
+}
+
+export interface Ambient {
+  symbol: string;
+  title: string;
+}
+
+export interface Ratings {
+  title: string;
+  person?: (Person)[] | null;
+}
+
+export interface Person {
+  name: string;
+  comment: string;
+  imgsrc: string;
+}
+
+export interface Artist {
+  img: string;
+  name: string;
+  description: string;
 }

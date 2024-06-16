@@ -12,9 +12,30 @@ footer {
   1px 3px 2px $blue-custom;
 }
 
-.container-contact ul li:last-child {
-  padding-top: 30px;
+.contact-list {
+  margin: 12px;
+  padding: 12px;
 }
+
+.contact-list li {
+  padding: 12px 6px;
+}
+
+.contact-list li:last-child {
+  display: inline-block;
+  width: 40%;
+  padding-top: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.contact-list li:last-child > a {
+  color: $white-color;
+  font-family: $cairo;
+  font-weight: 800;
+  text-decoration:underline;
+}
+
 
 .container-author {
   padding: 8px 0;
