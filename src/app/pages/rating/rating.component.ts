@@ -1,7 +1,8 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { JsonData } from '../../models/json-data';
 import { register } from 'swiper/element/bundle';
+import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-rating',
@@ -12,7 +13,9 @@ import { register } from 'swiper/element/bundle';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class RatingComponent {
-  items!: JsonData;
+  @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
+  public swiperParams!: SwiperOptions;
+  public items!: JsonData;
 
   constructor(private _data: DataService) {}
 
@@ -22,7 +25,23 @@ export class RatingComponent {
     this.getData.subscribe((res) => (this.items = res));
   }
 
+
   ngAfterViewInit() {
-    register();
+    this.swiperParams = {
+      slidesPerView: 1,
+      pagination: true,
+      parallax: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      on: {
+        init(){
+
+        }
+      }
+    }
+    Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams); // Add parameters to the Swiper
+    this.swiperContainerRef.nativeElement.initialize()
   }
 }

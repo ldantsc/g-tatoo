@@ -3,11 +3,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { DataService } from '../../services/data.service';
 import { JsonData } from '../../models/json-data';
 import { AsyncPipe } from '@angular/common';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-information',
   standalone: true,
-  imports: [MatIconModule, AsyncPipe],
+  imports: [ButtonComponent ,MatIconModule, AsyncPipe],
   templateUrl: './information.component.html',
   styleUrl: './information.component.scss',
 })
