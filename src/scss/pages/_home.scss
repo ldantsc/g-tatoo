@@ -1,27 +1,23 @@
-@use "../theme/variables" as *;
+@use "../utils/variables" as *;
+@import '../utils/mixins';
 
 .container-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include displayFlexCenter(column);
   text-align: center;
-  padding-top: 4em;
+  padding-top: 8em;
   margin: 3em 0;
-  gap: 10em;
+  gap: 10.8em;
 }
 
 .container-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 12px;
-  padding: 0 8px;
-  gap: 28px;
+  @include displayFlexCenter(column);
+  margin: 0 1.8em;
+  padding: 0 1.2em;
+  gap: 3.8em;
 }
 
 .address-logo > .logo {
-  width: 26.6rem;
+  width: 34rem;
 }
 
 .container-adress > img {
@@ -33,7 +29,7 @@
 .container-adress > address {
   display: inline;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .container-carrousel {
@@ -41,12 +37,9 @@
   overflow-y: visible;
 }
 
-@media screen and (1280px < width) {
+@media screen and (width > 1280px) {
   .container-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include displayFlexCenter(row);
     text-align: center;
     margin: 0 0;
     gap: 1em;

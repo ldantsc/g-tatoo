@@ -1,9 +1,8 @@
-@use "../theme/variables" as *;
+@use "../utils/variables" as *;
+@import '../utils/mixins';
 
 .container-information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include displayFlexCenter(column);
   margin-top: 60px;
   gap: 100px;
 }

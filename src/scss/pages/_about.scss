@@ -1,8 +1,9 @@
-@use "../theme/variables" as *;
+@use "../utils/variables" as *;
+@import '../utils/mixins';
+
 
 .container-about {
-  display: flex;
-  flex-direction: column;
+  @include displayFlexCenter(column);
   margin: 42px 12px 58px 12px;
   gap: 40px;
 }
@@ -10,14 +11,12 @@
 .container-about h2 {
   font-family: $cairo;
   font-size: 32px;
-  text-align: end;
+  align-self: self-end;
   padding-right: 30px;
 }
 
 .container-artist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include displayFlexCenter(column);
   text-align: center;
   gap: 14px;
 }

@@ -1,7 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { JsonData } from '../../models/json-data';
-import { register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
 
 @Component({
@@ -33,11 +32,10 @@ export class RatingComponent {
       parallax: true,
       loop: true,
       autoplay: {
-        delay: 3000,
+        delay: 5000,
       },
       on: {
         init(){
-
         }
       }
     }

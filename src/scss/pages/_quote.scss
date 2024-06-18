@@ -1,12 +1,10 @@
-@use "../theme/variables" as *;
+@use "../utils/variables" as *;
+@import '../utils/mixins';
 
 .container-quote {
+  @include displayFlexCenter(column);
   margin-top: 10em;
   height: 30.2vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
   overflow: hidden;
   gap: 26px;
