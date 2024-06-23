@@ -7,6 +7,14 @@
   padding-top: 8em;
   margin: 3em 0;
   gap: 10.8em;
+
+  @media screen and (min-width: $medium-screen) {
+    @include displayFlexCenter(row);
+    padding-top: 10em;
+    margin: 5em 0;
+    gap: 0;
+  }
+
 }
 
 .container-logo {
@@ -14,6 +22,11 @@
   margin: 0 1.8em;
   padding: 0 1.2em;
   gap: 3.8em;
+
+  @media screen and (min-width: $medium-screen) {
+    width: 50%;
+  }
+
 }
 
 .address-logo > .logo {
@@ -33,15 +46,11 @@
 }
 
 .container-carrousel {
+  width: 100%;
   position: relative;
   overflow-y: visible;
-}
 
-@media screen and (width > 1280px) {
-  .container-content {
-    @include displayFlexCenter(row);
-    text-align: center;
-    margin: 0 0;
-    gap: 1em;
+  @media screen and (min-width: $medium-screen) {
+    width: 50%;
   }
 }

@@ -9,6 +9,13 @@
   overflow: hidden;
   gap: 26px;
   background-color: transparent;
+
+  @media screen and (min-width: $medium-screen) {
+    margin-top: 14em;
+    height: 34vh;
+    gap: 34px;
+  }
+
 }
 
 video {
@@ -35,6 +42,12 @@ video {
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
+
+  @media screen and (min-width: $medium-screen) {
+    padding: 0 54px;
+    font-size: 1.8rem;
+  }
+  
 }
 
 .container-quote > h3,

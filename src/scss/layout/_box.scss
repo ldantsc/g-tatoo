@@ -6,4 +6,11 @@
   width: 380px;
   transform: scaleY(1.4);
   position: absolute;
+
+  @media screen and (min-width: $medium-screen) {
+    right: 0;
+    width: 400px;
+    transform: scaleY(1.5);
+  }
+
 }

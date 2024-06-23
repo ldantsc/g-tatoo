@@ -1,15 +1,19 @@
 @use "../utils/variables" as *;
+@import '../utils/mixins';
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include displayFlexCenter(column);
   background-color: #141414;
   text-align: center;
   gap: 60px;
   box-shadow:
   4px 3px 6px $purple-custom,
   1px 3px 2px $blue-custom;
+  padding: 24px 0 0 0;
+
+  @media screen and (min-width: $medium-screen) {
+    gap: 38px;
+  }
 }
 
 .contact-list {
@@ -27,6 +31,10 @@ footer {
   padding-top: 30px;
   vertical-align: middle;
   text-align: center;
+
+  @media screen and (min-width: $medium-screen) {
+    width: 26%;
+  }
 }
 
 .contact-list li:last-child > a {

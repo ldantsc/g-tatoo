@@ -24,6 +24,11 @@
   font-weight: 800;
   border-radius: 4px;
   transition: background 5000ms linear;
+
+  @media screen and (min-width: $medium-screen) {
+    padding: 16px;
+    font-size: 1.6rem;
+  }
 }
 
 .quote-icon-btn {

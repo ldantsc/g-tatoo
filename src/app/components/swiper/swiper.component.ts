@@ -20,6 +20,7 @@ export class SwiperComponent {
     this.swiperParams = {
       slidesPerView: 2,
       spaceBetween: 20,
+      loop: true,
       autoplay: {
         delay: 3000,
       },
@@ -28,9 +29,21 @@ export class SwiperComponent {
           slidesPerView: 3,
           spaceBetween: 150
         },
+        450: {
+          slidesPerView: 3,
+          spaceBetween: 100
+        },
         500: {
           slidesPerView: 3,
-          spaceBetween: 30
+          spaceBetween: 60
+        },
+        600: {
+          slidesPerView: 4,
+          spaceBetween: 138,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 150,
         }
       },
       on: {
