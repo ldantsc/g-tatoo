@@ -44,6 +44,10 @@ export class SwiperComponent {
         768: {
           slidesPerView: 3,
           spaceBetween: 150,
+        },
+        850: {
+          slidesPerView: 3,
+          spaceBetween: 150,
         }
       },
       on: {

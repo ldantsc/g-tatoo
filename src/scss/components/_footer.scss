@@ -14,44 +14,48 @@ footer {
   @media screen and (min-width: $medium-screen) {
     gap: 38px;
   }
+
+  @media screen and (min-width: $large-screen) {
+    @include displayFlexCenter(row)
+  }
 }
 
 .contact-list {
   margin: 12px;
   padding: 12px;
-}
 
-.contact-list li {
-  padding: 12px 6px;
-}
+  li {
+    padding: 12px 6px;
+  }
 
-.contact-list li:last-child {
-  display: inline-block;
-  width: 40%;
-  padding-top: 30px;
-  vertical-align: middle;
-  text-align: center;
+  li:last-child {
+    display: inline-block;
+    width: 40%;
+    padding-top: 30px;
+    vertical-align: middle;
+    text-align: center;
 
-  @media screen and (min-width: $medium-screen) {
-    width: 26%;
+    @media screen and (min-width: $medium-screen) {
+      width: 26%;
+    }
+
+    a {
+      color: $white-color;
+      font-family: $cairo;
+      font-weight: 800;
+      text-decoration:underline;
+    }
+
   }
 }
 
-.contact-list li:last-child > a {
-  color: $white-color;
-  font-family: $cairo;
-  font-weight: 800;
-  text-decoration:underline;
-}
-
-
 .container-author {
   padding: 8px 0;
-}
 
-.container-author a {
-  font-family: $cairo;
-  color: $grey-color;
-  font-size: 12px;
-  font-weight: 700;
+  a {
+    font-family: $cairo;
+    color: $grey-color;
+    font-size: 12px;
+    font-weight: 700;
+  }
 }

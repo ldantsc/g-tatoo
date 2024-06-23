@@ -5,6 +5,13 @@
   bottom: 5vh;
   right: 5vw;
   z-index: 50;
+
+  img {
+    @media screen and (min-width: $large-screen) {
+      width: 100px;
+    }
+  }
+
 }
 
 .quote-btn {
@@ -29,17 +36,17 @@
     padding: 16px;
     font-size: 1.6rem;
   }
+
+  &:hover {
+    background: linear-gradient(
+      40deg,
+      rgba(190, 5, 255, 1) 45%,
+      rgba(74, 111, 241, 1) 100%
+    );
+    transition: background 3s linear;
+  }
 }
 
 .quote-icon-btn {
   width: 20px;
-}
-
-.quote-btn:hover {
-  background: linear-gradient(
-    40deg,
-    rgba(190, 5, 255, 1) 45%,
-    rgba(74, 111, 241, 1) 100%
-  );
-  transition: background 3s linear;
 }

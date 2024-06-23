@@ -15,6 +15,12 @@
     gap: 0;
   }
 
+  @media screen and (min-width: $large-screen) {
+    @include displayFlexCenter(row);
+    padding-top: 12em;
+    margin: 8em 0;
+    gap: 4.5em;
+  }
 }
 
 .container-logo {
@@ -27,22 +33,37 @@
     width: 50%;
   }
 
+  @media screen and (min-width: $large-screen) {
+    width: 54%;
+  }
+
+  .logo {
+    width: 34rem;
+
+    @media screen and (min-width: $large-screen) {
+      width: 42rem;
+    }
+  }
+
 }
 
-.address-logo > .logo {
-  width: 34rem;
-}
+.container-adress {
 
-.container-adress > img {
-  vertical-align: middle;
-  width: 2.6rem;
-  margin-right: 4px;
-}
+  img {
+    vertical-align: middle;
+    width: 2.6rem;
+    margin-right: 4px;
+  }
 
-.container-adress > address {
-  display: inline;
-  font-style: normal;
-  font-size: 1.6rem;
+  address {
+    display: inline;
+    font-style: normal;
+    font-size: 1.6rem;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    padding: 0 54px;
+  }
 }
 
 .container-carrousel {
@@ -52,5 +73,9 @@
 
   @media screen and (min-width: $medium-screen) {
     width: 50%;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 46%;
   }
 }

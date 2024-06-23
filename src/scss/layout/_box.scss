@@ -13,4 +13,10 @@
     transform: scaleY(1.5);
   }
 
+  @media screen and (min-width: $large-screen) {
+    top: -4px;
+    right: 0;
+    width: 600px;
+    transform: scaleY(1.4);
+  }
 }
