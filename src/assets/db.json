@@ -58,7 +58,7 @@
       {
         "name": "Fulano 3",
         "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        "imgsrc": "https://picsum.photos/200"
+        "imgsrc": "https://scontent.fcgh5-1.fna.fbcdn.net/v/t39.30808-6/434391720_7696137107102941_3738996506916990991_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF0ZMFCPa8OCd15F3oLj4XNpXgfcFNX3m6leB9wU1febu3B5l7X599pzZfIqLHIOCbWUN5PNAia-YLv1uysd9dY&_nc_ohc=PFow8YJZ8WgQ7kNvgEB6fYm&_nc_zt=23&_nc_ht=scontent.fcgh5-1.fna&cb_e2o_trans=q&oh=00_AYDH9bO8j1Cdpc5PEzLAOfPJiiUIQFge8E62xlLgZK8VMA&oe=668110DA"
       }
     ]
   },
@@ -66,5 +66,6 @@
     "img": "assets/artist-1.png",
     "name": "Giovanna",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
-  }
+  },
+  "images": ["assets/tattoos/1.webp", "assets/tattoos/2.webp", "assets/tattoos/3.webp", "assets/tattoos/4.webp", "assets/tattoos/5.webp"]
 }

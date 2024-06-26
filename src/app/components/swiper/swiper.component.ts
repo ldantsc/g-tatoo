@@ -1,8 +1,9 @@
 import { NgOptimizedImage } from '@angular/common';
-import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
-import Swiper from 'swiper';
-import { register } from 'swiper/element';
+import { PathLocationStrategy } from '@angular/common';
+import { DataService } from '../../services/data.service';
+import { JsonData } from '../../models/json-data';
 
 @Component({
   selector: 'app-swiper',
@@ -12,23 +13,27 @@ import { register } from 'swiper/element';
   styleUrl: './swiper.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class SwiperComponent {
+export class SwiperComponent implements OnInit {
   @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
+  public getData = this._data.fetchDataJson()
   public swiperParams!: SwiperOptions;
+  public items!: JsonData;
+
+  constructor(private _data: DataService) {}
+
+  ngOnInit(): void {
+    this.getData.subscribe((res) => (this.items = res));
+  }
 
   ngAfterViewInit() {
     this.swiperParams = {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      spaceBetween: 168,
       loop: true,
       autoplay: {
-        delay: 3000,
+        delay: 3800,
       },
       breakpoints: {
-        386: {
-          slidesPerView: 3,
-          spaceBetween: 150
-        },
         450: {
           slidesPerView: 3,
           spaceBetween: 100
@@ -42,12 +47,20 @@ export class SwiperComponent {
           spaceBetween: 138,
         },
         768: {
-          slidesPerView: 3,
-          spaceBetween: 150,
+          slidesPerView: 2,
+          spaceBetween: 10,
         },
-        850: {
+        900: {
           slidesPerView: 3,
-          spaceBetween: 150,
+          spaceBetween: 120,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 60
+        },
+        1336: {
+          slidesPerView: 3,
+          spaceBetween: 140
         }
       },
       on: {

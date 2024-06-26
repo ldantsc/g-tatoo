@@ -6,6 +6,7 @@ export interface JsonData {
   ambient?: (Ambient)[] | null;
   ratings: Ratings;
   artist: Artist;
+  images: [];
 }
 
 export interface Logo {

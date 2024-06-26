@@ -6,9 +6,6 @@ footer {
   background-color: #141414;
   text-align: center;
   gap: 60px;
-  box-shadow:
-  4px 3px 6px $purple-custom,
-  1px 3px 2px $blue-custom;
   padding: 24px 0 0 0;
 
   @media screen and (min-width: $medium-screen) {
@@ -16,11 +13,21 @@ footer {
   }
 
   @media screen and (min-width: $large-screen) {
-    @include displayFlexCenter(row)
+    @include displayFlexCenter(row);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+
+  .container-contact {
+    @media screen and (min-width: $large-screen) {
+      flex-basis: 25%;
+    }
   }
 }
 
 .contact-list {
+  flex-shrink: 1;
   margin: 12px;
   padding: 12px;
 
@@ -30,7 +37,6 @@ footer {
 
   li:last-child {
     display: inline-block;
-    width: 40%;
     padding-top: 30px;
     vertical-align: middle;
     text-align: center;
@@ -39,7 +45,12 @@ footer {
       width: 26%;
     }
 
+    @media screen and (min-width: $large-screen) {
+      width: 50%;
+    }
+
     a {
+      width: 100%;
       color: $white-color;
       font-family: $cairo;
       font-weight: 800;
@@ -50,6 +61,8 @@ footer {
 }
 
 .container-author {
+  flex-grow: 1;
+  width: 100%;
   padding: 8px 0;
 
   a {
