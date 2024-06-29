@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { JsonData } from '../../models/json-data';
 import { SwiperOptions } from 'swiper/types';
@@ -11,19 +11,16 @@ import { SwiperOptions } from 'swiper/types';
   styleUrl: './rating.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class RatingComponent {
+export class RatingComponent implements OnInit {
   @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
   public swiperParams!: SwiperOptions;
   public items!: JsonData;
 
   constructor(private _data: DataService) {}
 
-  public getData = this._data.fetchDataJson()
-
   ngOnInit(): void {
-    this.getData.subscribe((res) => (this.items = res));
+    this.items = this._data.contentData()
   }
-
 
   ngAfterViewInit() {
     this.swiperParams = {
@@ -39,7 +36,7 @@ export class RatingComponent {
         }
       }
     }
-    Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams); // Add parameters to the Swiper
+    Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams);
     this.swiperContainerRef.nativeElement.initialize()
   }
 }

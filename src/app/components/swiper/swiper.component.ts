@@ -15,14 +15,13 @@ import { JsonData } from '../../models/json-data';
 })
 export class SwiperComponent implements OnInit {
   @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
-  public getData = this._data.fetchDataJson()
   public swiperParams!: SwiperOptions;
   public items!: JsonData;
 
   constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.getData.subscribe((res) => (this.items = res));
+    this.items = this._data.contentData()
   }
 
   ngAfterViewInit() {
@@ -69,7 +68,7 @@ export class SwiperComponent implements OnInit {
         }
       }
     }
-    Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams); // Add parameters to the Swiper
+    Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams);
     this.swiperContainerRef.nativeElement.initialize()
   }
 }

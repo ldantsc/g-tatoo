@@ -1,12 +1,11 @@
 export interface JsonData {
-  subscribe(): unknown;
   logo: Logo;
   contact: Contact;
   quote: Quote;
-  ambient?: (Ambient)[] | null;
+  ambient: Array<Ambient>;
   ratings: Ratings;
   artist: Artist;
-  images: [];
+  images: Array<string>;
 }
 
 export interface Logo {
@@ -38,7 +37,7 @@ export interface Ambient {
 
 export interface Ratings {
   title: string;
-  person?: (Person)[] | null;
+  person?: Array<Person>;
 }
 
 export interface Person {

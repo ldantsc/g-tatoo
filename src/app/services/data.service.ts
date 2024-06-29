@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { JsonData } from '../models/json-data';
-import { shareReplay } from 'rxjs';
+import * as Data from '../../assets/data.json';
 
 @Injectable({
   providedIn: 'root',
@@ -9,11 +8,11 @@ import { shareReplay } from 'rxjs';
 export class DataService {
   jsonUrl: string;
 
-  constructor(private http: HttpClient) {
+  constructor() {
     this.jsonUrl = 'assets/db.json';
   }
 
-  fetchDataJson() {
-    return this.http.get<JsonData>(this.jsonUrl).pipe(shareReplay(1))
+  contentData() {
+    return Data;
   }
 }

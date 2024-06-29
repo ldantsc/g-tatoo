@@ -15,6 +15,3 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
   ],
 };
-
-
-class MyNgModule {}

@@ -6,11 +6,10 @@
       class="example-icon"
       aria-label="Example icon-button with menu icon"
     >
-      <mat-icon color="white">menu</mat-icon>
+    <mat-icon color="white">menu</mat-icon>
     </button>
   </mat-toolbar-row>
   @if (isOpen) {
-  <mat-toolbar-row class="toggler-nav" [@mobile-nav]="isOpen ? 'open-modal' : 'close-modal'">
     <nav class="nav">
       <a routerLink="/" fragment="home">inicio</a>
       <a routerLink="" fragment="quote">orçamento</a>
@@ -19,6 +18,6 @@
       <a routerLink="" fragment="about">sobre</a>
       <a routerLink="" fragment="contact">contato</a>
     </nav>
-  </mat-toolbar-row>
   }
 </mat-toolbar>
+

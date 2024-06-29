@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { JsonData } from '../../models/json-data';
 import { DataService } from '../../services/data.service';
 
@@ -9,14 +9,13 @@ import { DataService } from '../../services/data.service';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
   items!: JsonData;
 
-  constructor(private _data: DataService) {}
-
-  public getData = this._data.fetchDataJson()
+  constructor(private _data: DataService) {
+  }
 
   ngOnInit(): void {
-    this.getData.subscribe((res) => (this.items = res));
+    this.items = this._data.contentData()
   }
 }
