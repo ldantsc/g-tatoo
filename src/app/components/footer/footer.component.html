@@ -1,16 +1,16 @@
 <footer>
   <div class="container-footer-logo">
-    <img class="logo" src="/assets/gi-logo.svg" alt="" width="280px" />
+    <img class="logo" src="{{ items.logo.img }}" alt="logotipo giovanna lopes tattoo" width="280px" />
   </div>
   <div class="container-contact">
     <ul class="contact-list">
-      <li>{{items.contact.address }}</li>
-      <li>{{items.contact.phone }}</li>
+      <li>{{ items.contact.address }}</li>
+      <li>{{ items.contact.phone }}</li>
       <li>
         <a href="https://www.instagram.com/gihlopestattoo/" target="_blank">
-          <img src="assets/instagram.svg" alt="" width="32px">
+          <img src="assets/instagram.svg" alt="icone instagram" width="32px"/>
           <p>
-            {{items.contact.instagram }}
+            {{ items.contact.instagram }}
           </p>
         </a>
       </li>
@@ -18,11 +18,10 @@
   </div>
   <div class="container-map">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.728746241061!2d-46.505516761255905!3d-23.61405923198774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67e19a901ccf%3A0x8bfb99b2176b77b7!2sTerm.%20Sapopemba!5e0!3m2!1spt-BR!2sbr!4v1717084470909!5m2!1spt-BR!2sbr"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7501426358976!2d-46.50615552535593!3d-23.613292163500866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67bdd9817bb9%3A0x5ae46bfec2c35aa9!2sAv.%20Sapopemba%2C%2010835%20-%20Jardim%20Adutora%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003988-010!5e0!3m2!1spt-BR!2sbr!4v1719689918783!5m2!1spt-BR!2sbr"
       width="324px"
       height="214px"
       style="border: 0"
-      allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
