@@ -18,19 +18,6 @@ import {
   imports: [MatButtonModule, MatIconModule, MatToolbarModule, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  animations: [
-    trigger('mobile-nav', [
-      state('close-modal', style({
-        transform: 'scale(1)'
-      })),
-      state('open-nav', style({
-        transform: 'scale(2)',
-        innerHeight: '40vh'
-      })),
-      transition('close-modal => open-nav', animate('10s')),
-      transition('open-modal => close-nav', animate('10s'))
-    ]),
-  ]
 })
 export class HeaderComponent implements OnInit {
   isOpen: boolean = false

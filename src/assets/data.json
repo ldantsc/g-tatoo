@@ -46,26 +46,26 @@
     "title": "Algumas avaliações de nossos clientes 💞",
     "person": [
       {
-        "name": "Fulano 1",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        "imgsrc": "https://picsum.photos/200"
+        "name": "Aline",
+        "comment": "A Giovanna é a melhor! Sem comparações! O carinho que ela dedica para fazer isso, da para ver que é com amor. Se eu fizer mil tatuagens, as mil sempre será com ela!",
+        "imgsrc": "assets/user-1.webp"
       },
       {
-        "name": "Fulano 2",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+        "name": "Karina",
+        "comment": "Eu esperaria 10 anos se precisasse para ela se aperfeiçoar para fazer minha tatto, porque não é só o \"fazer\", é o \"ser\" e a Giovanna trabalha com muito amor e isso é muito gratificante de se ver. Porque hoje, tudo gira em torno do dinheiro, interesse ou status. Mas a Giovanna realiza sua arte com muito amor e ninguem valoriza ela mais do que eu! A Giovanna é minha tatuadora particular, ela é meu fechamento!",
         "imgsrc": "https://picsum.photos/200"
       },
       {
         "name": "Fulano 3",
         "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        "imgsrc": "https://scontent.fcgh5-1.fna.fbcdn.net/v/t39.30808-6/434391720_7696137107102941_3738996506916990991_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF0ZMFCPa8OCd15F3oLj4XNpXgfcFNX3m6leB9wU1febu3B5l7X599pzZfIqLHIOCbWUN5PNAia-YLv1uysd9dY&_nc_ohc=PFow8YJZ8WgQ7kNvgEB6fYm&_nc_zt=23&_nc_ht=scontent.fcgh5-1.fna&cb_e2o_trans=q&oh=00_AYDH9bO8j1Cdpc5PEzLAOfPJiiUIQFge8E62xlLgZK8VMA&oe=668110DA"
+        "imgsrc": "https://picsum.photos/200"
       }
     ]
   },
   "artist": {
-    "img": "assets/artist-1.png",
+    "img": "assets/artist.webp",
     "name": "Giovanna",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+    "description": "Sou a Giovanna, tenho 25 anos, sou mãe e tatuadora de coração desde 2018. A arte sempre fez parte da minha vida: música, artesanato, tudo que envolve criatividade me encanta. Comecei a desenhar ainda na escola, sabe aquele negócio de ficar rabiscando sem parar? E foi assim que descobri minha paixão! Desde então, não parei de estudar e me dedicar à tatuagem, um mundo incrível que nunca para de me surpreender. É muito gratificante fazer parte da história de cada pessoa que me procura, deixando uma marca única na pele."
   },
-  "images": ["assets/tattoos/1.webp", "assets/tattoos/2.webp", "assets/tattoos/3.webp", "assets/tattoos/4.webp", "assets/tattoos/5.webp"]
+  "images": ["assets/tattoos/1.webp", "assets/tattoos/2.webp", "assets/tattoos/3.webp", "assets/tattoos/4.webp", "assets/tattoos/5.webp", "assets/tattoos/6.webp", "assets/tattoos/7.webp", "assets/tattoos/8.webp"]
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit, WritableSignal, signal } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { AsyncPipe, JsonPipe } from '@angular/common';
+import { AsyncPipe, JsonPipe, NgOptimizedImage } from '@angular/common';
 import { JsonData } from '../../models/json-data';
 import { MatIconModule } from '@angular/material/icon';
 import { SwiperComponent } from '../../components/swiper/swiper.component';

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonData } from '../../models/json-data';
 import { DataService } from '../../services/data.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })

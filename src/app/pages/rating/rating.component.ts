@@ -2,11 +2,12 @@ import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild } from
 import { DataService } from '../../services/data.service';
 import { JsonData } from '../../models/json-data';
 import { SwiperOptions } from 'swiper/types';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-rating',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './rating.component.html',
   styleUrl: './rating.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
