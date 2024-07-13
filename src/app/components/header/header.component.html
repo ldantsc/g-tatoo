@@ -1,15 +1,6 @@
 <mat-toolbar class="header">
   <mat-toolbar-row>
-    <button
-      (click)="toggleNav()"
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
-    <mat-icon color="white">menu</mat-icon>
-    </button>
-  </mat-toolbar-row>
-  @if (isOpen) {
+    @if (isOpen) {
     <nav class="nav">
       <a routerLink="/" fragment="home">inicio</a>
       <a routerLink="" fragment="quote">orçamento</a>
@@ -18,6 +9,15 @@
       <a routerLink="" fragment="about">sobre</a>
       <a routerLink="" fragment="contact">contato</a>
     </nav>
-  }
+    }
+    <button
+      (click)="toggleNav()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+      [hidden]="isOpen"
+    >
+      <mat-icon color="white">menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
 </mat-toolbar>
-

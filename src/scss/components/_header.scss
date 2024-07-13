@@ -2,64 +2,47 @@
 
 .mat-toolbar {
   position: fixed;
+  justify-content: center;
   background: $black-container !important;
   top: 0;
   z-index: 100;
 
-  .mat-toolbar-row {
-    @media screen and (min-width: $medium-screen) {
-      height: 78px;
-    }
-
-
-    button, .mat-icon {
+  button {
+    .mat-icon {
+      color: $grey-color;
     }
   }
-}
 
-
-
-.header .mat-toolbar-row {
-  justify-content: end;
-}
-
-.mat-icon {
-  color: $grey-color;
-}
-
-.close-button {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.header > .toggler-nav {
-  justify-content: center;
+  .mat-toolbar-row {
+    justify-content: end !important;
+    height: auto;
+  }
 }
 
 .nav {
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-self: center;
-  width: 100%;
+  padding: 1em;
   gap: 8px;
-  }
+  position: relative;
+  z-index: 20;
 
-  .nav::after {
-    content: '';
+  ::after {
+    content: "";
     position: fixed;
     top: 0;
     right: 0;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(1.8px);
     z-index: -100;
-}
+  }
 
-.nav > a {
-  font-family: $cairo;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: $white-color;
+  a {
+    font-family: $cairo;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $white-color;
+  }
 }
