@@ -8,7 +8,7 @@ import { SwiperComponent } from '../../components/swiper/swiper.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatIconModule,SwiperComponent, JsonPipe, AsyncPipe],
+  imports: [MatIconModule,SwiperComponent, JsonPipe, AsyncPipe, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

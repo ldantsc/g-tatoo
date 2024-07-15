@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /gallery
 
-Sitemap: https://g-tatoo.vercel.app/sitemap.xml
+Sitemap: https://giovannalopestattoo.vercel.app/sitemap.xml
