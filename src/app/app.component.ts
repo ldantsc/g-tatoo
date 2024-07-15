@@ -9,12 +9,10 @@ import { HeaderComponent } from './components/header/header.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, ButtonComponent],
   template: `
-  <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer id="contact"></app-footer>
-  <app-button buttonType="whatsBtn"></app-button>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer id="contact"></app-footer>
+    <app-button buttonType="whatsBtn"></app-button>
   `,
 })
-export class AppComponent {
-  
-}
+export class AppComponent {}
