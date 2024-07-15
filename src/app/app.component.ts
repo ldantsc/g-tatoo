@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
+import { inject } from '@vercel/analytics/*';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
     <app-button buttonType="whatsBtn"></app-button>
   `,
 })
-export class AppComponent {}
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    inject();
+  }
+}
