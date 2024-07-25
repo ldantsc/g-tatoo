@@ -7,15 +7,13 @@ import { DataService } from '../../services/data.service';
   standalone: true,
   imports: [],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss',
 })
 export class FooterComponent implements OnInit {
   items!: JsonData;
 
-  constructor(private _data: DataService) {
-  }
+  constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.items = this._data.contentData()
+    this.items = this._data.contentData();
   }
 }

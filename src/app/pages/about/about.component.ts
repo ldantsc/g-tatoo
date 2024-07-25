@@ -8,7 +8,6 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
 })
 export class AboutComponent implements OnInit {
   items!: JsonData;
@@ -16,6 +15,6 @@ export class AboutComponent implements OnInit {
   constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.items = this._data.contentData()
+    this.items = this._data.contentData();
   }
 }

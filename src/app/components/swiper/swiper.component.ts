@@ -1,5 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
-import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 import { PathLocationStrategy } from '@angular/common';
 import { DataService } from '../../services/data.service';
@@ -11,7 +17,7 @@ import { JsonData } from '../../models/json-data';
   imports: [NgOptimizedImage],
   templateUrl: './swiper.component.html',
   styleUrl: './swiper.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SwiperComponent implements OnInit {
   @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
@@ -21,7 +27,7 @@ export class SwiperComponent implements OnInit {
   constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.items = this._data.contentData()
+    this.items = this._data.contentData();
   }
 
   ngAfterViewInit() {
@@ -35,11 +41,11 @@ export class SwiperComponent implements OnInit {
       breakpoints: {
         450: {
           slidesPerView: 3,
-          spaceBetween: 100
+          spaceBetween: 100,
         },
         500: {
           slidesPerView: 3,
-          spaceBetween: 60
+          spaceBetween: 60,
         },
         600: {
           slidesPerView: 4,
@@ -55,20 +61,18 @@ export class SwiperComponent implements OnInit {
         },
         1024: {
           slidesPerView: 2,
-          spaceBetween: 60
+          spaceBetween: 60,
         },
         1336: {
           slidesPerView: 3,
-          spaceBetween: 140
-        }
+          spaceBetween: 140,
+        },
       },
       on: {
-        init(){
-
-        }
-      }
-    }
+        init() {},
+      },
+    };
     Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams);
-    this.swiperContainerRef.nativeElement.initialize()
+    this.swiperContainerRef.nativeElement.initialize();
   }
 }

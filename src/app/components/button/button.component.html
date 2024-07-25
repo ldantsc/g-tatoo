@@ -1,30 +1,36 @@
 @if (buttonType === "whatsBtn") {
-<a
-  class="whatsapp-btn"
-  href="https://wa.me/5511949606970?text=Ol%C3%A1%20Giovanna%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20e%20tirar%20duvidas%21"
-  target="_blank"
-  ><img
-    src="assets/whatsapp-anim.gif"
-    alt="icone whatsapp"
-    width="80px"
-    height="80px"
-    loading="lazy"
-/></a>
-} @if (buttonType === "quoteBtn") {
-<a
-  class="quote-btn"
-  href="https://wa.me/5511949606970?text=Ol%C3%A1%20Giovanna%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20e%20tirar%20duvidas%21"
-  target="_blank"
->
-  {{ buttonTitle }}
-  <img class="quote-icon-btn" src="assets/whatsapp-128.ico" alt="icone whatsapp"/>
-</a>
-} @if (buttonType === "galleryBtn") {
-<a
-  class="quote-btn"
-  href="https://www.instagram.com/gihlopestattoo/"
-  target="_blank"
->
-  {{ buttonTitle }}
-</a>
+  <a
+    class="whatsapp-btn"
+    href="https://wa.me/5511949606970?text=Ol%C3%A1%20Giovanna%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20e%20tirar%20duvidas%21"
+    target="_blank"
+    ><img
+      src="assets/whatsapp-anim.gif"
+      alt="icone whatsapp"
+      width="80px"
+      height="80px"
+      loading="lazy"
+  /></a>
+}
+@if (buttonType === "quoteBtn") {
+  <a
+    class="quote-btn"
+    href="https://wa.me/5511949606970?text=Ol%C3%A1%20Giovanna%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20e%20tirar%20duvidas%21"
+    target="_blank"
+  >
+    {{ buttonTitle }}
+    <img
+      class="quote-icon-btn"
+      src="assets/whatsapp-128.ico"
+      alt="icone whatsapp"
+    />
+  </a>
+}
+@if (buttonType === "galleryBtn") {
+  <a
+    class="quote-btn"
+    href="https://www.instagram.com/gihlopestattoo/"
+    target="_blank"
+  >
+    {{ buttonTitle }}
+  </a>
 }

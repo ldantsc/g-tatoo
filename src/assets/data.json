@@ -46,19 +46,19 @@
     "title": "Algumas avaliações de nossos clientes 💞",
     "person": [
       {
+        "name": "Karina",
+        "comment": "Eu esperaria 10 anos se precisasse para ela se aperfeiçoar para fazer minha tatto, porque não é só o \"fazer\", é o \"ser\" e a Giovanna trabalha com muito amor e isso é muito gratificante de se ver. Porque hoje, tudo gira em torno do dinheiro, interesse ou status. Mas a Giovanna realiza sua arte com muito amor e ninguem valoriza ela mais do que eu! A Giovanna é minha tatuadora particular, ela é meu fechamento!",
+        "imgsrc": "assets/user-2.webp"
+      },
+      {
         "name": "Aline",
         "comment": "A Giovanna é a melhor! Sem comparações! O carinho que ela dedica para fazer isso, da para ver que é com amor. Se eu fizer mil tatuagens, as mil sempre será com ela!",
         "imgsrc": "assets/user-1.webp"
       },
       {
-        "name": "Karina",
-        "comment": "Eu esperaria 10 anos se precisasse para ela se aperfeiçoar para fazer minha tatto, porque não é só o \"fazer\", é o \"ser\" e a Giovanna trabalha com muito amor e isso é muito gratificante de se ver. Porque hoje, tudo gira em torno do dinheiro, interesse ou status. Mas a Giovanna realiza sua arte com muito amor e ninguem valoriza ela mais do que eu! A Giovanna é minha tatuadora particular, ela é meu fechamento!",
-        "imgsrc": "https://picsum.photos/200"
-      },
-      {
-        "name": "Fulano 3",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-        "imgsrc": "https://picsum.photos/200"
+        "name": "Matheus",
+        "comment": "Agradeço a Giovanna pela ótima experiência que tive ao tatuar com ela! Sua habilidade e atenção aos detalhes foram incríveis, e ela me deixou completamente à vontade durante todo o processo, ambiente muito  agradável atendimento nota 10. Estou muito feliz com o resultado da tatuagem e definitivamente voltarei para mais no futuro. Obrigado novamente!",
+        "imgsrc": "assets/user-3.webp"
       }
     ]
   },

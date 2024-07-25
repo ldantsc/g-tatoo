@@ -1,6 +1,5 @@
 @use "../utils/variables" as *;
-@import '../utils/mixins';
-
+@import "../utils/mixins";
 
 .container-about {
   @include displayFlexCenter(column);
@@ -42,15 +41,15 @@
       0px 2px 2px $blue-custom;
     object-fit: cover;
 
-      @media screen and (min-width: $medium-screen) {
-        width: 240px;
-        height: 300px;
-      }
+    @media screen and (min-width: $medium-screen) {
+      width: 240px;
+      height: 300px;
+    }
 
-      @media screen and (min-width: $large-screen) {
-        width: 280px;
-        height: 380px;
-      }
+    @media screen and (min-width: $large-screen) {
+      width: 280px;
+      height: 380px;
+    }
   }
 
   h3 {

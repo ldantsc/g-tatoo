@@ -1,5 +1,5 @@
 @use "../utils/variables" as *;
-@import '../utils/mixins';
+@import "../utils/mixins";
 
 .container-quote {
   @include displayFlexCenter(column);
@@ -49,9 +49,8 @@
   }
 }
 
-
 .container-quote::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;

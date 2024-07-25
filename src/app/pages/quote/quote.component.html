@@ -1,10 +1,13 @@
 <div class="container-quote">
   <h3>
-    {{items.quote.describe}}
+    {{ items.quote.describe }}
   </h3>
-  <app-button buttonType="quoteBtn" buttonTitle={{items.quote.button.title}}/>
+  <app-button
+    buttonType="quoteBtn"
+    buttonTitle="{{ items.quote.button.title }}"
+  />
   <video
-    src={{items.quote.videosrc}}
+    src="{{ items.quote.videosrc }}"
     [autoplay]="true"
     [muted]="true"
     [playsInline]="true"

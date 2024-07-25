@@ -8,9 +8,8 @@ import { ButtonComponent } from '../../components/button/button.component';
 @Component({
   selector: 'app-information',
   standalone: true,
-  imports: [ButtonComponent ,MatIconModule, AsyncPipe],
+  imports: [ButtonComponent, MatIconModule, AsyncPipe],
   templateUrl: './information.component.html',
-  styleUrl: './information.component.scss',
 })
 export class InformationComponent implements OnInit {
   items!: JsonData;
@@ -18,6 +17,6 @@ export class InformationComponent implements OnInit {
   constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.items = this._data.contentData()
+    this.items = this._data.contentData();
   }
 }

@@ -8,7 +8,6 @@ import { JsonData } from '../../models/json-data';
   standalone: true,
   imports: [ButtonComponent],
   templateUrl: './quote.component.html',
-  styleUrl: './quote.component.scss',
 })
 export class QuoteComponent implements OnInit {
   items!: JsonData;
@@ -16,6 +15,6 @@ export class QuoteComponent implements OnInit {
   constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.items = this._data.contentData()
+    this.items = this._data.contentData();
   }
 }

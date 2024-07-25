@@ -1,4 +1,10 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { JsonData } from '../../models/json-data';
 import { SwiperOptions } from 'swiper/types';
@@ -9,8 +15,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './rating.component.html',
-  styleUrl: './rating.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class RatingComponent implements OnInit {
   @ViewChild('swiperContainer') swiperContainerRef!: ElementRef;
@@ -20,7 +25,7 @@ export class RatingComponent implements OnInit {
   constructor(private _data: DataService) {}
 
   ngOnInit(): void {
-    this.items = this._data.contentData()
+    this.items = this._data.contentData();
   }
 
   ngAfterViewInit() {
@@ -33,11 +38,10 @@ export class RatingComponent implements OnInit {
         delay: 5000,
       },
       on: {
-        init(){
-        }
-      }
-    }
+        init() {},
+      },
+    };
     Object.assign(this.swiperContainerRef.nativeElement, this.swiperParams);
-    this.swiperContainerRef.nativeElement.initialize()
+    this.swiperContainerRef.nativeElement.initialize();
   }
 }

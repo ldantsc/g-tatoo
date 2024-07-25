@@ -6,9 +6,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.scss',
 })
 export class ButtonComponent {
   @Input() buttonType: string = '';
-  @Input() buttonTitle: string = ''
+  @Input() buttonTitle: string = '';
 }

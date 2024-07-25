@@ -6,5 +6,5 @@ export const routes: Routes = [
     path: '',
     loadComponent: () =>
       import('./pages/layout/main/main.component').then((m) => m.MainComponent),
-  }
+  },
 ];

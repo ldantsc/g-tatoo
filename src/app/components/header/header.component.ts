@@ -15,22 +15,26 @@ import {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatToolbarModule, RouterLink, RouterLinkActive],
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    RouterLink,
+    RouterLinkActive,
+  ],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements OnInit {
-  isOpen: boolean = false
+  isOpen: boolean = false;
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.events.subscribe(event => {
-      if(event) {
-        this.isOpen = false
+    this.router.events.subscribe((event) => {
+      if (event) {
+        this.isOpen = false;
       }
-    })
+    });
   }
 
   toggleNav() {

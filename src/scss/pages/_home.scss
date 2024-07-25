@@ -1,5 +1,5 @@
 @use "../utils/variables" as *;
-@import '../utils/mixins';
+@import "../utils/mixins";
 
 .container-content {
   @include displayFlexCenter(column);
@@ -44,11 +44,9 @@
       width: 42rem;
     }
   }
-
 }
 
 .container-adress {
-
   img {
     vertical-align: middle;
     width: 2.6rem;

@@ -2,31 +2,33 @@
   <h2>{{ items.ratings.title }}</h2>
   <swiper-container init="false" #swiperContainer>
     @for (item of items.ratings.person; track $index) {
-    <swiper-slide>
-      <div class="container-user" data-swiper-parallax-opacity="0.5">
-        <img
-          class="user-image"
-          ngSrc={{item.imgsrc}}
-          width="200"
-          height="200"
-          alt=""
-          srcset=""
-          data-swiper-parallax="-300"
-          data-swiper-parallax-duration="1000"
-        />
-        <div class="user-comment">
-          <div data-swiper-parallax="-900" data-swiper-parallax-duration="1000">
-            <h3>{{ item.name }}</h3>
-          </div>
-          <div
-            data-swiper-parallax="-1600"
-            data-swiper-parallax-duration="1400"
-          >
-            <p>{{ item.comment }}</p>
+      <swiper-slide>
+        <div class="container-user" data-swiper-parallax-opacity="0.5">
+          <img
+            class="user-image"
+            ngSrc="{{ item.imgsrc }}"
+            width="200"
+            height="200"
+            alt="Foto do cliente"
+            data-swiper-parallax="-300"
+            data-swiper-parallax-duration="1000"
+          />
+          <div class="user-comment">
+            <div
+              data-swiper-parallax="-900"
+              data-swiper-parallax-duration="1000"
+            >
+              <h3>{{ item.name }}</h3>
+            </div>
+            <div
+              data-swiper-parallax="-1600"
+              data-swiper-parallax-duration="1400"
+            >
+              <p>{{ item.comment }}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </swiper-slide>
+      </swiper-slide>
     }
   </swiper-container>
 </div>
