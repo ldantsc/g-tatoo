@@ -1,4 +1,9 @@
+# *
 User-agent: *
-Disallow: /gallery
+Allow: /
 
+# Host
+Host: https://giovannalopestattoo.vercel.app/
+
+# Sitemaps
 Sitemap: https://giovannalopestattoo.vercel.app/sitemap.xml
